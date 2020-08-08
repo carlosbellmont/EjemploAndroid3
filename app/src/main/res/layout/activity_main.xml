@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_red_dark">
+    <TableRow>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_column="1"
+            android:background="@android:color/holo_purple"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Columna 1, Fila 1"
+                android:padding="3dip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Columna 1, Fila 1"
+                android:gravity="right"
+                android:padding="3dip" />
+        </LinearLayout>
+        <TextView
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Columna 2, Fila 1"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Columna 3, Fila 2"
+            android:background="@android:color/holo_green_dark"
+            android:padding="3dip" />
+
+    </TableRow>
+    <View
+        android:layout_height="10dip"
+        android:background="@color/colorPrimary" />
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Columna 3, Fila 2"
+            android:layout_span="2"
+            android:padding="3dip"
+            android:background="@color/colorAccent"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</TableLayout>
